@@ -21,9 +21,9 @@
 }
 
 .ms_debug #portfolio .ms_content{
-    height: 100px;
+    /* height: 100px;
     background-color: green;
-    border: 2px dashed orange;
+    border: 2px dashed orange; */
 }
 
 /* REGOLE DI CSS ------------------------------------------ */
@@ -32,6 +32,7 @@
 
 
 /* HEADER ------------------------------------------------- */
+
 
 header .navbar{
     padding: 0;
@@ -45,6 +46,14 @@ header .navbar .container-fluid a{
     color: var(--text-white);
 }
 
+header .navbar-toggler{
+    border-color: var(--text-white);
+}
+
+header .navbar-toggler-icon{
+    filter: invert(1);
+}
+
 .navbar-collapse{
     flex-grow: 0;
 }
@@ -54,5 +63,28 @@ header .navbar .container-fluid a{
 #start_bootstrap, 
 #about{
     background-color: var(--secondary-color);
+    color: var(--text-white);
 }
 
+#start_bootstrap img{
+    width: 12.5rem;
+}
+
+/* FOOTER ------------------------------------------------- */
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+footer .ms_icon{
+    width: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    border:solid 1px #FFFFFF;
+    border-radius: 50%;
+}
+
+#credits{
+    background-color: var(--tertiary-color);
+}
