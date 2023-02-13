@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #222E3E;
+    --secondary-color: #1FB18A;
+    --tertiary-color: #2C425A;
+    --text-white: #FFFFFF;
+}
+
+/* DEBUG -------------------------------------------------- */
+
+.ms_debug .row {
+    border: 1px dotted black;
+}
+.debug div[class*=“col-“] {
+    border: 1px dashed red;
+}
+
+.ms_debug #portfolio .ms_content{
+    height: 100px;
+    background-color: green;
+    border: 2px dashed orange;
+}
+
+/* REGOLE DI CSS ------------------------------------------ */
+/* REGOLE GENERALI ---------------------------------------- */
+
+
+
+/* HEADER ------------------------------------------------- */
+
+header .navbar{
+    padding: 0;
+}
+
+header .navbar .container-fluid{
+    background-color: var(--primary-color);
+}
+
+header .navbar .container-fluid a{
+    color: var(--text-white);
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+/* MAIN --------------------------------------------------- */
+
+#start_bootstrap, 
+#about{
+    background-color: var(--secondary-color);
+}
+
