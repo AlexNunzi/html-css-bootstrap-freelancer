@@ -186,7 +186,9 @@ footer .secondary-color{
 
 .mask::after{
     content: '\2b';
-    font-size: 4rem;
+    font-size: 6rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bolder;
     color: var(--text-white);
     position: absolute;
     top: 50%;
