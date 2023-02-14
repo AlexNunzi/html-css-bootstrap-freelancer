@@ -117,8 +117,8 @@ header .navbar-toggler-icon{
 
 /* START BOOTSTRAP */
 
-main{
-    padding-top: 80px;
+#start_bootstrap{
+    padding-top: 120px;
 }
 
 #start_bootstrap, 
@@ -172,18 +172,15 @@ footer{
 }
 
 footer .ms_icon{
-    /* width: 2rem;
-    height: 2rem;
-    line-height: 2rem; */
     display: inline-block;
     border:solid 1px #FFFFFF;
     border-radius: 50%;
 }
 
 footer .ms_icon i{
-    width: 1rem;
-    height: 1rem;
-    line-height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     display: block;
 }
 
@@ -210,4 +207,12 @@ footer .secondary-color{
 
 #portfolio .ms_content:hover .mask{
     display: block;
+}
+
+#contact-me form button:hover{
+    background-color: #0E675E;
+}
+
+#contact-me .form-control:focus{
+    box-shadow: none;
 }
