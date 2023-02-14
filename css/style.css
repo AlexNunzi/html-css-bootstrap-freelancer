@@ -14,25 +14,13 @@
 
 /* DEBUG -------------------------------------------------- */
 
-.ms_debug div[class*="container"] {
-    border: 2px dotted orange;
-}
-
-.ms_debug .row {
-    border: 1px dotted black;
-}
-.ms_debug div[class*="col-"] {
-    border: 1px dashed red;
-}
-
-.ms_debug #portfolio .ms_content{
-    /* height: 100px;
-    background-color: green;
-    border: 2px dashed orange; */
-}
 
 /* REGOLE DI CSS ------------------------------------------ */
 /* REGOLE GENERALI ---------------------------------------- */
+
+html{
+    scroll-padding-top: 80px;
+}
 
 .ms_flank-line-white, 
 .ms_flank-line-black{
@@ -87,15 +75,12 @@
     background-color: var(--text-black);
 }
 
-
-
 /* HEADER ------------------------------------------------- */
 
 header{
     background-color: var(--primary-color);
     height: 80px;
 }
-
 
 header .navbar .container-fluid a{
     color: var(--text-white);
@@ -107,6 +92,10 @@ header .navbar-toggler{
 
 header .navbar-toggler-icon{
     filter: invert(1);
+}
+
+header .ms_dropdown_background{
+    background-color: var(--primary-color);
 }
 
 .navbar-collapse{
