@@ -141,6 +141,12 @@ main{
     background-color: rgba(0, 125, 0, 0.5);
 }
 
+/* CONTACT ME --------------------------------------------- */
+
+#contact-me .ms_bg-btn-green{
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
 
 /* FOOTER ------------------------------------------------- */
 
