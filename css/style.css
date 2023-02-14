@@ -172,11 +172,19 @@ footer{
 }
 
 footer .ms_icon{
-    width: 2rem;
-    line-height: 2rem;
+    /* width: 2rem;
+    height: 2rem;
+    line-height: 2rem; */
     display: inline-block;
     border:solid 1px #FFFFFF;
     border-radius: 50%;
+}
+
+footer .ms_icon i{
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    display: block;
 }
 
 #credits{
@@ -184,6 +192,9 @@ footer .ms_icon{
 }
 
 
+footer .secondary-color{
+    color: var(--secondary-color);
+}
 
 /* ANIMAIZONI --------------------------------------------- */
 
