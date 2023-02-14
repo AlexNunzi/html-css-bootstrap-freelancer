@@ -148,6 +148,22 @@ main{
     color: var(--text-white);
 }
 
+#contact-me input::placeholder, 
+#contact-me textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text-black);
+    opacity: 1; /* Firefox */
+  }
+  
+#contact-me input:-ms-input-placeholder, 
+#contact-me textarea::placeholder { /* Internet Explorer 10-11 */
+    color: var(--text-black);
+  }
+  
+#contact-me input::-ms-input-placeholder, 
+#contact-me textarea::placeholder { /* Microsoft Edge */
+    color: var(--text-black);
+  }
+
 /* FOOTER ------------------------------------------------- */
 
 footer{
