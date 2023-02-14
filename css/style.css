@@ -9,6 +9,7 @@
     --secondary-color: #1FB18A;
     --tertiary-color: #2C425A;
     --text-white: #FFFFFF;
+    --text-black: #000000
 }
 
 /* DEBUG -------------------------------------------------- */
@@ -33,16 +34,65 @@
 /* REGOLE DI CSS ------------------------------------------ */
 /* REGOLE GENERALI ---------------------------------------- */
 
+.ms_flank-line-white, 
+.ms_flank-line-black{
+    position: relative;
+}
+
+.ms_flank-line-white::after{
+    content: '';
+    position: absolute;
+    right: calc(100% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 8rem;
+    border-radius: 0.2rem;
+    background-color: var(--text-white);
+}
+
+.ms_flank-line-white::before{
+    content: '';
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 8rem;
+    border-radius: 0.2rem;
+    background-color: var(--text-white);
+}
+
+.ms_flank-line-black::after{
+    content: '';
+    position: absolute;
+    right: calc(100% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 8rem;
+    border-radius: 0.2rem;
+    background-color: var(--text-black);
+}
+
+.ms_flank-line-black::before{
+    content: '';
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 8rem;
+    border-radius: 0.2rem;
+    background-color: var(--text-black);
+}
+
 
 
 /* HEADER ------------------------------------------------- */
 
 header{
     background-color: var(--primary-color);
-}
-
-header .navbar{
-    padding: 0;
 }
 
 
@@ -64,6 +114,8 @@ header .navbar-toggler-icon{
 
 /* MAIN --------------------------------------------------- */
 
+/* START BOOTSTRAP */
+
 #start_bootstrap, 
 #about{
     background-color: var(--secondary-color);
@@ -73,6 +125,8 @@ header .navbar-toggler-icon{
 #start_bootstrap img{
     width: 12.5rem;
 }
+
+
 
 /* FOOTER ------------------------------------------------- */
 
