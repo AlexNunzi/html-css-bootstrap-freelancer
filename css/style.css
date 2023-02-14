@@ -9,7 +9,7 @@
     --secondary-color: #1FB18A;
     --tertiary-color: #2C425A;
     --text-white: #FFFFFF;
-    --text-black: #000000
+    --text-black: #000000;
 }
 
 /* DEBUG -------------------------------------------------- */
@@ -131,6 +131,15 @@ main{
     width: 12.5rem;
 }
 
+.mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 125, 0, 0.5);
+}
 
 
 /* FOOTER ------------------------------------------------- */
@@ -150,4 +159,22 @@ footer .ms_icon{
 
 #credits{
     background-color: var(--tertiary-color);
+}
+
+
+
+/* ANIMAIZONI --------------------------------------------- */
+
+.mask::after{
+    content: '\2b';
+    font-size: 4rem;
+    color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio .ms_content:hover .mask{
+    display: block;
 }
