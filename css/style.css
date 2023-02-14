@@ -13,10 +13,14 @@
 
 /* DEBUG -------------------------------------------------- */
 
+.ms_debug div[class*="container"] {
+    border: 2px dotted orange;
+}
+
 .ms_debug .row {
     border: 1px dotted black;
 }
-.debug div[class*=“col-“] {
+.ms_debug div[class*="col-"] {
     border: 1px dashed red;
 }
 
@@ -33,14 +37,14 @@
 
 /* HEADER ------------------------------------------------- */
 
+header{
+    background-color: var(--primary-color);
+}
 
 header .navbar{
     padding: 0;
 }
 
-header .navbar .container-fluid{
-    background-color: var(--primary-color);
-}
 
 header .navbar .container-fluid a{
     color: var(--text-white);
